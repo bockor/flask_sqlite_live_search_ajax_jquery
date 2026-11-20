@@ -4,7 +4,7 @@
 from flask import Flask, render_template, request, jsonify
 import sqlite3
 
-DB_LOCALE = '/Users/bseys/Projects/flask_sqlite_live_search_ajax_jquery/asknra.db'
+DB_LOCALE = '/change/here/the/path/to/asknra.db'
 
 app = Flask(__name__)
 app.secret_key = "changeme"
