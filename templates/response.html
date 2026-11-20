@@ -1,0 +1,18 @@
+<h3>{{num_matches}} Records Found</h3>
+<table class="table table-striped custab">
+  <thead>
+      <tr>
+         <th>Submitted By</th>
+         <th>Resource</th>
+         <th>RequestID</th>
+         <th>Info</th>
+      </tr>
+  </thead>
+  <tbody>
+{% for match in matches %}  
+   <tr>
+    <td>{{match.submitted_by}}</td>
+    <td>{{match.resource}}</td>
+    <td>{{match.requestID}}</td>
+    <td>{{match.info}}</td></tr>
+{% endfor %}
